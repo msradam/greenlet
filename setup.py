@@ -43,7 +43,8 @@ print(plat_machine)
 plat_compiler = platform.python_compiler()
 try:
     # (sysname, nodename, release, version, machine)
-    unam_machine = os.uname()[-1]
+    #unam_machine = os.uname()[-1]\
+    unam_machine = 's390x'
 except AttributeError:
     unam_machine = ''
 if (
