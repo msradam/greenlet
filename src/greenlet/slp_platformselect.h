@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-# include "platform/switch_s390_unix.h" /* Linux/S390 zSeries (64-bit) */
+# include "platform/switch_s390_zos.h" /* OS/390 zSeries (64-bit) */
 
 // #if   defined(MS_WIN32) && !defined(MS_WIN64) && defined(_M_IX86) && defined(_MSC_VER)
 // # include "platform/switch_x86_msvc.h" /* MS Visual Studio on X86 */
