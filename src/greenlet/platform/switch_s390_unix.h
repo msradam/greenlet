@@ -29,7 +29,10 @@
 /* Technically, r11-r13 also need saving, but function prolog starts
    with stm(g) and since there are so many saved registers already
    it won't be optimized, resulting in all r6-r15 being saved */
-#define REGS_TO_SAVE "r6", "r7", "r8", "r9", "r10", "r14", \
+#define REGS_TO_SAVE "r6", "r7", "r8", "r9", "r10", "r14"
+// #define REGS_TO_SAVE "r6", "r7", "r8", "r9", "r10", "r14", \
+// 		     "f0", "f1", "f2", "f3", "f4", "f5", "f6", "f7", \
+// 		     "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15"
 
 static int
 slp_switch(void)
