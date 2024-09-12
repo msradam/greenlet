@@ -34,8 +34,10 @@ is_linux = sys.platform.startswith('linux') # could be linux or linux2
 # plat_platform = 'zos'
 # plat_machine = 's390x'
 
-plat_platform = platform.platform()
-plat_machine = platform.machine()
+# plat_platform = platform.platform()
+# plat_machine = platform.machine()
+plat_platform = 'zos'
+plat_machine = 's390x'
 print(plat_platform)
 print(plat_machine)
 plat_compiler = platform.python_compiler()
