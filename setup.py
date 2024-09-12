@@ -31,8 +31,10 @@ is_win = sys.platform.startswith("win")
 # https://github.com/python-greenlet/greenlet/issues/94
 # pylint:disable=too-many-boolean-expressions
 is_linux = sys.platform.startswith('linux') # could be linux or linux2
-plat_platform = platform.platform()
-plat_machine = platform.machine()
+platform.platform() = 'zos'
+platform.machine() = 's390x'
+# plat_platform = platform.platform()
+# plat_machine = platform.machine()
 plat_compiler = platform.python_compiler()
 try:
     # (sysname, nodename, release, version, machine)
